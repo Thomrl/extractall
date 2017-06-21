@@ -1,5 +1,5 @@
 #! python3.5
-import os, shutil, sys
+import os, sys
 from pyunpack import Archive
 
 path = sys.argv[1]
@@ -7,10 +7,14 @@ path = sys.argv[1]
 os.chdir(path)
 curdir = os.getcwd()
 print("Chosen folder "+curdir)
-os.mkdir("_output")
-print("_output folder has been created")
 
 for file in os.listdir():
+    if not os.path.exists("_output"):
+        os.mkdir("_output")
+        print("_output folder has been created")
+    else:
+        print("\"_output\" folder already exists!")
+        quit()
     print("Going to folder: "+file)
     os.chdir(".\\"+file)
     for file in os.listdir():
