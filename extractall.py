@@ -3,7 +3,6 @@ import os, sys
 from pyunpack import Archive
 
 path = sys.argv[1]
-
 os.chdir(path)
 curdir = os.getcwd()
 print("Chosen folder "+curdir)
