@@ -3,15 +3,18 @@ This scripts goes through the sub folders of the chosen folder and checks for .r
 
 # How to use (new)
 Simply run the script in the folder containing the folders with rar files in them.
-```Main folder
-      folder
-          .rar
-          .r00
-          .r01
-      folder2
-          .rar
-          .r00
-          .r01```
+```
+Main folder
+  folder
+    .rar
+    .r00
+    .r01
+  folder2
+    .rar
+    .r00
+    .r01
+  extractall.py
+```
 This means we put it in the folder where folder and folder2 is, so the script can go through those folders, check for rar files and start unpacking them.
 
 
